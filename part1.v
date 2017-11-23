@@ -1,4 +1,4 @@
-module part1 (CLOCK_50, CLOCK2_50, KEY, FPGA_I2C_SCLK, FPGA_I2C_SDAT, AUD_XCK, 
+module part1 (CLOCK_50, CLOCK2_50, KEY, FPGA_I2C_SCLK, FPGA_I2C_SDAT, AUD_XCK,
 		        AUD_DACLRCK, AUD_ADCLRCK, AUD_BCLK, AUD_ADCDAT, AUD_DACDAT);
 
 	input CLOCK_50, CLOCK2_50;
@@ -11,7 +11,7 @@ module part1 (CLOCK_50, CLOCK2_50, KEY, FPGA_I2C_SCLK, FPGA_I2C_SDAT, AUD_XCK,
 	input AUD_DACLRCK, AUD_ADCLRCK, AUD_BCLK;
 	input AUD_ADCDAT;
 	output AUD_DACDAT;
-	
+
 	// Local wires.
 	wire read_ready, write_ready, read, write;
 	wire [23:0] readdata_left, readdata_right;
@@ -19,19 +19,17 @@ module part1 (CLOCK_50, CLOCK2_50, KEY, FPGA_I2C_SCLK, FPGA_I2C_SDAT, AUD_XCK,
 	wire reset = ~KEY[0];
 
 	/////////////////////////////////
-	// Your code goes here 
+	// Your code goes here
 	/////////////////////////////////
-	
-	assign writedata_left = ... not shown
-	assign writedata_right = ... not shown
-	assign read = ... not shown
+
+	assign read = 1'b1;
 	assign write = ... not shown
-	
+
 /////////////////////////////////////////////////////////////////////////////////
-// Audio CODEC interface. 
+// Audio CODEC interface.
 //
 // The interface consists of the following wires:
-// read_ready, write_ready - CODEC ready for read/write operation 
+// read_ready, write_ready - CODEC ready for read/write operation
 // readdata_left, readdata_right - left and right channel data from the CODEC
 // read - send data from the CODEC (both channels)
 // writedata_left, writedata_right - left and right channel data to the CODEC
@@ -82,5 +80,3 @@ module part1 (CLOCK_50, CLOCK2_50, KEY, FPGA_I2C_SCLK, FPGA_I2C_SDAT, AUD_XCK,
 	);
 
 endmodule
-
-
