@@ -1,0 +1,94 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/h/u3/c6/06/quyilin/UofT/CSC258/YASUHATI-
+vmain
+Z1 !s110 1511416139
+!i10b 1
+!s100 WLf;^GCCn^a4oF><n@ahN3
+I;eL@@gVR4^SUo5m<G3>f]1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1511415903
+Z4 8sixtyhzcounter.v
+Z5 Fsixtyhzcounter.v
+L0 9
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1511416139.000000
+Z8 !s107 sixtyhzcounter.v|
+Z9 !s90 -reportprogress|300|-timescale|1ns/1ns|sixtyhzcounter.v|
+!i113 1
+Z10 o-timescale 1ns/1ns
+Z11 tCvgOpt 0
+vmilestone
+R1
+!i10b 1
+!s100 2GNUD<0QhUMzMjdDeW1Vo1
+I9DFX>XH<g3WRmHd=0lOoE3
+R2
+R0
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vratedivider
+R1
+!i10b 1
+!s100 G:XWQ5T9j1zBcYhYlGJ^R2
+IfhET4?2PjcU9zcg:^T@[Z0
+R2
+R0
+R3
+R4
+R5
+L0 32
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vsixtyhzcounter
+R1
+!i10b 1
+!s100 VaRlS3Gag0m<9ecVQTbL]0
+ISIhIX6hR7iiUKa6MlYVI?3
+R2
+R0
+R3
+R4
+R5
+L0 23
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
