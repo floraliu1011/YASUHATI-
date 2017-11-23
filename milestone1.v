@@ -90,3 +90,4 @@ module milestone1 (CLOCK_50, CLOCK2_50, KEY, FPGA_I2C_SCLK, FPGA_I2C_SDAT, AUD_X
   sixtyhzcounter sc(1, CLOCK_50, reset, clk_60hz);
 
 endmodule
+

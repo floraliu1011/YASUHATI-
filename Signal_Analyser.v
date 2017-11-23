@@ -1,20 +1,19 @@
-module Signal_Analyser (left, read_ready, clk_60hz, resetn, pitch, volumn);
+module Signal_Analyser (left, read_ready, clk_60hz, resetn, pitch, vol);
 
   input [23:0] left;
   input read_ready;
   input clk_60hz;
   input resetn;
   output [1:0] pitch;
-  output volumn;
+  output vol;
 
   pitch_counter pitch_cnter(left, read_ready, resetn, pitch);
 
-  volumn vlm (left, read_ready, resetn, clk_60hz, volumn);
+  volumn vlm(left, read_ready, resetn, clk_60hz, vol);
 
 
 endmodule //Signal_Analyser
 
-// output 3 states according to the privious pitch before the clock edge
 module pitch_counter (value, read_ready, resetn, out);
   input [23:0] value;
   input read_ready;
@@ -55,6 +54,9 @@ module pitch_counter (value, read_ready, resetn, out);
   end
 endmodule //pitch_counter
 
+
+// output 3 states according to the privious pitch before the clock edge
+
 module volumn (left, read_ready, resetn, clk_60hz, out);
 
   input [23:0] left;
@@ -70,12 +72,25 @@ module volumn (left, read_ready, resetn, clk_60hz, out);
   absolute_value abs(left, abs_left);
 
   always @ ( posedge read_ready, posedge clk_60hz) begin
-    if (clk_60hz == 1'b1 | resetn == 1'b0)
-      maximum <= 24'h000000;
-    else if (abs_left > maximum)
-      maximum <= left;
-    else
-      maximum <= maximum;
+	if (clk_60hz == 1'b1)
+		maximum <= 24'h000000;
+	else
+		begin
+			if (resetn == 0)
+				maximum <= 24'h000000;
+			else if (abs_left > maximum)
+				maximum <= left;
+			else
+				maximum <= maximum;
+		end
+//    if (resetn == 0)
+//		maximum <= 24'h000000;
+//	 else if (clk_60hz == 1'b1)
+//      maximum <= 24'h000000;
+//    else if (abs_left > maximum)
+//      maximum <= left;
+//    else
+//      maximum <= maximum;
   end
 
   always @(posedge clk_60hz)
@@ -99,3 +114,4 @@ module absolute_value(in, out);
       out = in;
   end
 endmodule
+

@@ -1,0 +1,261 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|altsyncram_p3i1:FIFOram|ram_block1a0~PORT_B_WRITE_ENABLE_REG'
+Slack : -8.490
+TNS   : -16.851
+
+Type  : Slow 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -7.380
+TNS   : -640.730
+
+Type  : Slow 1100mV 85C Model Setup 'audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|left_audio_fifo_read_space[0]'
+Slack : -4.124
+TNS   : -114.397
+
+Type  : Slow 1100mV 85C Model Setup 'sixtyhzcounter:sc|ratedivider:r|qout'
+Slack : -3.562
+TNS   : -3.562
+
+Type  : Slow 1100mV 85C Model Hold 'audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|left_audio_fifo_read_space[0]'
+Slack : -2.349
+TNS   : -64.938
+
+Type  : Slow 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.362
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'sixtyhzcounter:sc|ratedivider:r|qout'
+Slack : 1.490
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|altsyncram_p3i1:FIFOram|ram_block1a0~PORT_B_WRITE_ENABLE_REG'
+Slack : 5.041
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|left_audio_fifo_read_space[0]'
+Slack : -2.597
+TNS   : -54.906
+
+Type  : Slow 1100mV 85C Model Removal 'audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|left_audio_fifo_read_space[0]'
+Slack : 0.172
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -2.174
+TNS   : -524.537
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|altsyncram_p3i1:FIFOram|ram_block1a0~PORT_B_WRITE_ENABLE_REG'
+Slack : -0.457
+TNS   : -1.702
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|left_audio_fifo_read_space[0]'
+Slack : -0.394
+TNS   : -26.066
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'sixtyhzcounter:sc|ratedivider:r|qout'
+Slack : -0.394
+TNS   : -0.542
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~FRACTIONAL_PLL|vcoph[0]'
+Slack : 1.322
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK2_50'
+Slack : 18.418
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|altsyncram_p3i1:FIFOram|ram_block1a0~PORT_B_WRITE_ENABLE_REG'
+Slack : -8.212
+TNS   : -16.297
+
+Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -7.038
+TNS   : -616.636
+
+Type  : Slow 1100mV 0C Model Setup 'audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|left_audio_fifo_read_space[0]'
+Slack : -4.257
+TNS   : -118.755
+
+Type  : Slow 1100mV 0C Model Setup 'sixtyhzcounter:sc|ratedivider:r|qout'
+Slack : -3.598
+TNS   : -3.598
+
+Type  : Slow 1100mV 0C Model Hold 'audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|left_audio_fifo_read_space[0]'
+Slack : -2.277
+TNS   : -64.303
+
+Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.359
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'sixtyhzcounter:sc|ratedivider:r|qout'
+Slack : 1.485
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|altsyncram_p3i1:FIFOram|ram_block1a0~PORT_B_WRITE_ENABLE_REG'
+Slack : 4.807
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|left_audio_fifo_read_space[0]'
+Slack : -2.405
+TNS   : -51.477
+
+Type  : Slow 1100mV 0C Model Removal 'audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|left_audio_fifo_read_space[0]'
+Slack : 0.058
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -2.174
+TNS   : -534.874
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|altsyncram_p3i1:FIFOram|ram_block1a0~PORT_B_WRITE_ENABLE_REG'
+Slack : -0.520
+TNS   : -1.828
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|left_audio_fifo_read_space[0]'
+Slack : -0.394
+TNS   : -25.800
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'sixtyhzcounter:sc|ratedivider:r|qout'
+Slack : -0.394
+TNS   : -0.530
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~FRACTIONAL_PLL|vcoph[0]'
+Slack : 1.322
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK2_50'
+Slack : 18.444
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|altsyncram_p3i1:FIFOram|ram_block1a0~PORT_B_WRITE_ENABLE_REG'
+Slack : -5.419
+TNS   : -10.835
+
+Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -4.717
+TNS   : -287.468
+
+Type  : Fast 1100mV 85C Model Setup 'audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|left_audio_fifo_read_space[0]'
+Slack : -2.191
+TNS   : -55.268
+
+Type  : Fast 1100mV 85C Model Setup 'sixtyhzcounter:sc|ratedivider:r|qout'
+Slack : -1.729
+TNS   : -1.729
+
+Type  : Fast 1100mV 85C Model Hold 'audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|left_audio_fifo_read_space[0]'
+Slack : -1.393
+TNS   : -39.144
+
+Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.179
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'sixtyhzcounter:sc|ratedivider:r|qout'
+Slack : 0.643
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|altsyncram_p3i1:FIFOram|ram_block1a0~PORT_B_WRITE_ENABLE_REG'
+Slack : 3.065
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|left_audio_fifo_read_space[0]'
+Slack : -2.160
+TNS   : -45.803
+
+Type  : Fast 1100mV 85C Model Removal 'audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|left_audio_fifo_read_space[0]'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -2.174
+TNS   : -406.249
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|altsyncram_p3i1:FIFOram|ram_block1a0~PORT_B_WRITE_ENABLE_REG'
+Slack : -0.199
+TNS   : -0.398
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|left_audio_fifo_read_space[0]'
+Slack : -0.025
+TNS   : -0.364
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'sixtyhzcounter:sc|ratedivider:r|qout'
+Slack : 0.067
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~FRACTIONAL_PLL|vcoph[0]'
+Slack : 1.322
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK2_50'
+Slack : 18.161
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|altsyncram_p3i1:FIFOram|ram_block1a0~PORT_B_WRITE_ENABLE_REG'
+Slack : -4.707
+TNS   : -9.405
+
+Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -4.043
+TNS   : -236.572
+
+Type  : Fast 1100mV 0C Model Setup 'audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|left_audio_fifo_read_space[0]'
+Slack : -2.059
+TNS   : -51.694
+
+Type  : Fast 1100mV 0C Model Setup 'sixtyhzcounter:sc|ratedivider:r|qout'
+Slack : -1.553
+TNS   : -1.553
+
+Type  : Fast 1100mV 0C Model Hold 'audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|left_audio_fifo_read_space[0]'
+Slack : -1.286
+TNS   : -36.696
+
+Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.170
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'sixtyhzcounter:sc|ratedivider:r|qout'
+Slack : 0.566
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|altsyncram_p3i1:FIFOram|ram_block1a0~PORT_B_WRITE_ENABLE_REG'
+Slack : 2.703
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|left_audio_fifo_read_space[0]'
+Slack : -1.787
+TNS   : -38.150
+
+Type  : Fast 1100mV 0C Model Removal 'audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|left_audio_fifo_read_space[0]'
+Slack : 0.109
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -2.174
+TNS   : -406.383
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|altsyncram_p3i1:FIFOram|ram_block1a0~PORT_B_WRITE_ENABLE_REG'
+Slack : -0.159
+TNS   : -0.318
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|left_audio_fifo_read_space[0]'
+Slack : 0.013
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'sixtyhzcounter:sc|ratedivider:r|qout'
+Slack : 0.094
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~FRACTIONAL_PLL|vcoph[0]'
+Slack : 1.322
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK2_50'
+Slack : 18.150
+TNS   : 0.000
+
+------------------------------------------------------------
