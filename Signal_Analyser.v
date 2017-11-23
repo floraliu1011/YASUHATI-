@@ -44,9 +44,11 @@ module pitch_counter (value, read_ready, resetn, out);
   // end
 
   always @ (posedge sign) begin
-    if(count > 15'h0078)
+    if (count > 15'h0004)
+    // if(count > 15'h0078)
       out <= 2'b00;
-    else if (count >= 15'h003C)
+    else if (count >= 15'h0002)
+    // else if (count >= 15'h003C)
       out <= 2'b01;
     else
       out <= 2'b11;
