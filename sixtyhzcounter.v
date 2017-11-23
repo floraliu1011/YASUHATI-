@@ -1,25 +1,3 @@
-module milestone(volume, pitch, out);
-	input volume;
-	input [1:0] pitch;
-	output [2:0] out;
-	assign out = {volume, pitch};
-endmodule
-
-
-module main(volume, pitch, LEDR, CLOCK_50);
-  input CLOCK_50;
-	input volume;
-	input [1:0] pitch;
-	output [9:0] LEDR;
-  //sixtyhzcounter clk1(1, CLOCK_50, 1, LEDR[5]); // always enable and never reset.
-	milestone m1(volume, pitch, {LEDR[9], LEDR[1:0]});
-endmodule
-
-
-// 0b11001011011100110101  rate of 1/60 hz clock.
-
-
-
 module sixtyhzcounter(enable, clk, reset_n, out);
 	input clk, enable, reset_n;
 	output [27:0] out;
@@ -55,6 +33,6 @@ module ratedivider(enable, load, clk, reset_n, qout);
 					qout <= 0;
 				end
 			end
-			
+
 	end
 endmodule

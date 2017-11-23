@@ -1,5 +1,5 @@
 module part1 (CLOCK_50, CLOCK2_50, KEY, FPGA_I2C_SCLK, FPGA_I2C_SDAT, AUD_XCK,
-		        AUD_DACLRCK, AUD_ADCLRCK, AUD_BCLK, AUD_ADCDAT, AUD_DACDAT);
+		        AUD_DACLRCK, AUD_ADCLRCK, AUD_BCLK, AUD_ADCDAT, AUD_DACDAT, pitch, volumn);
 
 	input CLOCK_50, CLOCK2_50;
 	input [0:0] KEY;
@@ -23,7 +23,7 @@ module part1 (CLOCK_50, CLOCK2_50, KEY, FPGA_I2C_SCLK, FPGA_I2C_SDAT, AUD_XCK,
 	/////////////////////////////////
 
 	assign read = 1'b1;
-	assign write = ... not shown
+	assign write =1'b0;
 
 /////////////////////////////////////////////////////////////////////////////////
 // Audio CODEC interface.
