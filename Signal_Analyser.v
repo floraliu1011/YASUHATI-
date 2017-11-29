@@ -60,7 +60,7 @@ module pitch_counter (value, read_ready, clk_50, resetn, out, count);
 	 else
 		count <= count;
   end
-  
+
 
   // always @(posedge clk_48k)
   // begin
@@ -74,7 +74,7 @@ module pitch_counter (value, read_ready, clk_50, resetn, out, count);
 //    if (count > 15'h0004 | resetn == 1'b0)
 	if (resetn == 1'b0)
 		out <= 2'b00;
-    else 
+    else
 	 begin
 	 if(count > 15'h0078)
       out <= 2'b10;
@@ -104,7 +104,7 @@ module volumn (left, read_ready, clk_50, resetn, clk_60hz, out);
 
 
   absolute_value abs(left, abs_left);
-  
+
   always @(posedge clk_50)
   begin
 	if(read_ready == 1)
@@ -118,7 +118,7 @@ module volumn (left, read_ready, clk_50, resetn, clk_60hz, out);
 		out <= out;
   end
 
-//  always @ ( posedge clk_50) 
+//  always @ ( posedge clk_50)
 //	begin
 //		if (resetn == 0 | clk_60hz == 1'b1)
 //		 maximum <= 24'h000000;
@@ -128,7 +128,7 @@ module volumn (left, read_ready, clk_50, resetn, clk_60hz, out);
 //						maximum <= left;
 //				else
 //						maximum <= maximum;
-//				
+//
 //			end
 //		else
 //			maximum <= maximum;
@@ -164,4 +164,3 @@ module absolute_value(in, out);
       out = in;
   end
 endmodule
-
