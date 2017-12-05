@@ -1,14 +1,16 @@
-module Signal_Analyser (left, read, read_ready, clk_50, clk_60hz, resetn, vol);
+module Signal_Analyser (left, read, read_ready, clk_50, clk_60hz, resetn, jump, walk);
 
   input [23:0] left;
   input read_ready;
   input clk_60hz;
   input clk_50;
   input resetn;
-  output vol;
+  output jump;
+  output walk;
   output reg read;
+  reg [23:0] valid_left;
 
-  volumn vlm(valid_left, read_ready, clk_50, resetn, clk_60hz, vol);
+  volumn vlm(valid_left, read_ready, clk_50, resetn, clk_60hz, jump, walk);
 	always @(posedge clk_50)
 	begin
 	read = 0;
@@ -22,17 +24,78 @@ module Signal_Analyser (left, read, read_ready, clk_50, clk_60hz, resetn, vol);
 
 endmodule //Signal_Analyser
 
+//module pitch_counter (value, read_ready, clk_50, resetn, out, count);
+//  input [23:0] value;
+//  input clk_50;
+//  input read_ready;
+//  input resetn;
+//  output reg [1:0] out;
+//  output reg [14:0] count;
+//  wire [1:0] category;
+//  wire sign;
+//  reg presign;
+//
+//  assign sign = value[23];
+//
+//  always @(posedge clk_50)
+//  begin
+//  if (resetn == 1'b0)
+//		begin
+//      count <= 15'h0000;
+//		presign <= 0;
+//		end
+//	 else if (sign != presign)
+//		begin
+//		count <= 15'h0000;
+//		presign <= sign;
+//		end
+//	 else if (read_ready == 1)
+//		begin
+//      count <= count + 1'b1;
+//		presign <= sign;
+//		end
+//	 else
+//		count <= count;
+//  end
+//
+//
+//  // always @(posedge clk_48k)
+//  // begin
+//  //   if (sign == 1'b1 | resetn == 1'b0)
+//  //     count <= 15'h0000;
+//  //   else
+//  //     count <= count + 1'b1;
+//  // end
+//
+//  always @ (posedge sign) begin
+////    if (count > 15'h0004 | resetn == 1'b0)
+//	if (resetn == 1'b0)
+//		out <= 2'b00;
+//    else
+//	 begin
+//	 if(count > 15'h0078)
+//      out <= 2'b10;
+////    else if (count >= 15'h0002)
+//    else if (count >= 15'h003C)
+//      out <= 2'b01;
+//    else
+//      out <= 2'b11;
+//	end
+//  end
+//endmodule //pitch_counter
+
 
 // output 3 states according to the privious pitch before the clock edge
 
-module volumn (left, read_ready, clk_50, resetn, clk_60hz, out);
+module volumn (left, read_ready, clk_50, resetn, clk_60hz, jump, walk);
 
   input [23:0] left;
   input read_ready;
   input clk_50;
   input clk_60hz;
   input resetn;
-  output reg out;
+  output reg jump;
+  output reg walk;
 
   wire [23:0] abs_left;
   reg [23:0] maximum;
@@ -44,13 +107,21 @@ module volumn (left, read_ready, clk_50, resetn, clk_60hz, out);
   begin
 	if(read_ready == 1)
 	begin
-		if (abs_left >= 24'h00ffff)
-		out <= 1;
+		if (abs_left >= 24'h0fffff)
+		jump <= 1;
+		if (abs_left >= 24'h01ffff)
+		walk <= 1;
 		else
-		out <= 0;
+		begin
+		jump <= 0;
+		walk <= 0;
+		end
 	end
 	else
-		out <= out;
+		begin
+		walk <= walk;
+		jump <= jump;
+		end
   end
 
 //  always @ ( posedge clk_50)
