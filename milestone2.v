@@ -135,7 +135,11 @@ module background(walk, jump, x, y, clock, reset, color);
 		sclkk_edge <= 0;
 		end
       if (jump && !fall)
-        yasuhati = yasuhati - 10; // jump
+			begin
+        yasuhati = yasuhati - 10;
+			if (yasuhati <= 9)
+				yasuhati = 9;
+			end// jump
       else if (walk && !fall)
         scroll <= 1;
       else if (fall_block || (!reset))
@@ -149,7 +153,7 @@ module background(walk, jump, x, y, clock, reset, color);
         yasuhati = 14; // upper bound.
 		else if (yasuhati >= 90)
 		begin
-			if (yasuhati_x >= hole_left && yasuhati_x <= hole_right)
+			if (yasuhati_x >= hole_left && yasuhati_x <= hole_right - 14)
 			begin
 				if (yasuhati <= 115)
 					yasuhati = yasuhati + 8;
@@ -254,7 +258,7 @@ module background(walk, jump, x, y, clock, reset, color);
 	 if (x >= hole_left && x <= hole_right && y >= 7'd90 && y <= 7'd119)
 		color <= 3'b111; // hole.
 
-    if (x >= yasuhati_x && x <= yasuhati_x + 7'd6 && y >= yasuhati - 7'd9 && y <= yasuhati)
+    if (x >= yasuhati_x && x <= yasuhati_x + 7'd14 && y >= yasuhati - 7'd17 && y <= yasuhati)
       color <= character_color; // yasuhati; can improve this later.
 
     if (fall)
